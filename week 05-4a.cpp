@@ -1,0 +1,14 @@
+// week 05-4a.cpp
+#include <stdio.h>
+int main () {
+	int N = 0;
+	scanf("%d", &N);
+	int ans = 100;
+	if (N > 2000) {
+		ans += (N-2000) / 500 *5;
+		if ((N-2000) % 500 > 0) {
+			ans += 5;
+		}
+	}
+	printf("%d\n", ans);
+}
