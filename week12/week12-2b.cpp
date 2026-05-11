@@ -1,0 +1,17 @@
+// week 12-2b.cpp
+
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    int ans = 0;
+    
+    while (N > 0) {
+        ans = ans * 10 + N % 10;
+        N /= 10;
+    }
+    printf("%d+%d=%d\n", N, ans, N + ans);
+
+    return 0;
+}
